@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My world bucket list</title>
+
+        <!-- google fonts cdn -->
+        <!-- Source Sans Pro -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Bootstrap css cdn -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+
+        <!-- styles css -->
+        <!-- /dist/css/map.css -->
+        <link rel="stylesheet" type="text/css" href="./css/map.css" />
+        <!-- my navbar css -->
+        <link rel="stylesheet" href="./css/navbar.css" />
+
+        <!-- js maps api -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    </head>
+    <body>
+        <header class="navbar p-0 m-0">
+            <nav class="navbar navar-dark bg-dark w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img
+                            src="./img/logo_50.png"
+                            alt="logo"
+                            width="30"
+                            height="30"
+                            class="d-inline-block align-text-top"
+                        />
+                        My world bucket list
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="maps">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div
+                            id="dreams-container"
+                            class="col-sm-6 col-md-5 col-lg-4 col-xl-3 mx-auto"
+                        ></div>
+                        <div
+                            id="maps-container"
+                            class="col-sm-6 col-md-7 col-lg-8 col-xl-9"
+                        >
+                            <button type="button" id="resetMap" class="btn btn">
+                                Réinitialiser carte
+                            </button>
+                            <div id="map"></div>
+                            <div id="panorama"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ***** scripts js ***** -->
+        <!-- Bootstrap js cdn -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- JS WEBPACK (bundle.js) -->
+        <script src="bundle.js"></script>
+        <!-- maps api -->
+        <script
+            async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=init"
+        ></script>
+    </body>
+</html>
